@@ -6,12 +6,12 @@ export default function Hero() {
     return (
         <div className={'mb-8'}>
             <div className={'flex flex-row pt-10 px-8 justify-between'}>
-                <h1 className={'text-black font-logo font-bold text-4xl'}>Architectural Solutions</h1>
+                <h1 className={'text-black font-logo font-bold text-xl md:text-4xl'}>Architectural Solutions</h1>
                 <div>
                     <a href='#contact' className={'text-center inline-block bg-gray-900 hover:bg-gray-700 text-white font-bold py-1 px-2 rounded'}>Contact Me</a>
                 </div>
             </div>
-            <div className={'flex bg-hero-bg bg-contain bg-right bg-no-repeat w-full h-screen items-center relative'}>
+            <div className={'hero h- flex bg-hero-bg bg-contain bg-right bg-no-repeat w-full items-center relative'}>
                 <div className={'p-10 bg-white text-black absolute opacity-75 md:opacity-100 xl:ml-64'}>
                     <h1 className='text-6xl font-bold'>Metal Fabrication and Design</h1>
                     <div className={'flex'}>

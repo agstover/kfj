@@ -3,8 +3,8 @@ import Footer from "../components/Footer";
 import Collage from "../components/Collage";
 import getFiles from '../lib/getFiles'
 
-const Arrow = () => (
-  <section className={'scrolldown'} id='scrolldown'>
+const Arrow = ({className}) => (
+  <section className={`scrolldown text-center ${className}`} id='scrolldown'>
       <a href="#work"><span></span>View our work</a>
   </section>
 )
@@ -13,7 +13,9 @@ export default function Home({photos}) {
   return (
     <>
       <Hero />
-      <Arrow />
+      <div className={'flex justify-center'}>
+        <Arrow />
+      </div>
       <div className={'bg-gradient-to-b from-white to-gray-300 mb-20'}>
         <img className={'w-full'} src='mtn-border.png'/>
       </div>
