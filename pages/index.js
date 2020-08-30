@@ -3,14 +3,25 @@ import Footer from "../components/Footer";
 import Collage from "../components/Collage";
 import getFiles from '../lib/getFiles'
 
+const Arrow = () => (
+  <section className={'scrolldown'} id='scrolldown'>
+      <a href="#work"><span></span>View our work</a>
+  </section>
+)
 
 export default function Home({photos}) {
   return (
     <>
       <Hero />
+      <Arrow />
+      <div className={'bg-gradient-to-b from-white to-gray-300 mb-20'}>
+        <img className={'w-full'} src='mtn-border.png'/>
+      </div>
+      <div id='work'>
       {
-        Object.keys(photos).map((section, index) => <Collage key={index} title={section} photos={photos[section]}/>)
+        Object.keys(photos).map((section, index) => <Collage key={index} title={section.split('_').join(' ')} photos={photos[section]}/>)
       }
+      </div>
       <Footer />
     </>
   )
@@ -26,7 +37,6 @@ export async function getStaticProps(context) {
     acc[temp] = Array.isArray(acc[temp]) ? [...acc[temp], photo] : [] 
     return acc
   },{})
-  console.log("PHOTOS", photos)
   return {
     props: {
       photos

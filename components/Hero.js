@@ -1,12 +1,14 @@
 import ReactCountryFlag from 'react-country-flag'
 
+
+
 export default function Hero() {
     return (
         <div className={'mb-8'}>
-            <div className={'flex flex-row pt-10 px-8'}>
-                <h1 className={'flex-grow text-black font-logo font-bold text-4xl'}>Architectural Solutions</h1>
+            <div className={'flex flex-row pt-10 px-8 justify-between'}>
+                <h1 className={'text-black font-logo font-bold text-4xl'}>Architectural Solutions</h1>
                 <div>
-                    <a href='#contact' className={' bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded'}>Contact Me</a>
+                    <a href='#contact' className={'text-center inline-block bg-gray-900 hover:bg-gray-700 text-white font-bold py-1 px-2 rounded'}>Contact Me</a>
                 </div>
             </div>
             <div className={'flex bg-hero-bg bg-contain bg-right bg-no-repeat w-full h-screen items-center relative'}>
