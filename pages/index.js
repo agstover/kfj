@@ -35,8 +35,9 @@ export async function getStaticProps(context) {
   let photos = await getFiles(photosDir)
   photos = photos.map(photo => photo.split(`${process.cwd()}/public/`)[1])
   .reduce((acc, photo) => {
-    let temp = photo.split('/')[1]
-    acc[temp] = Array.isArray(acc[temp]) ? [...acc[temp], photo] : [] 
+    let section = photo.split('/')[1]
+    acc[section] = Array.isArray(acc[section]) ? [...acc[section], photo] : [photo] 
+    console.log('ACC', acc[section]);
     return acc
   },{})
   return {
