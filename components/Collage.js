@@ -1,7 +1,7 @@
 import { ReactPhotoCollage } from 'react-photo-collage'
 
 export default function Collage({photos, title}) {
-    const photoData = photos.map(photo => ({src:photo}))
+    const photoData = photos.map(photo => ({source:photo}))
     const setting = {
         width: '100%',
         height: ['250px', '170px'],

@@ -37,7 +37,6 @@ export async function getStaticProps(context) {
   .reduce((acc, photo) => {
     let section = photo.split('/')[1]
     acc[section] = Array.isArray(acc[section]) ? [...acc[section], photo] : [photo] 
-    console.log('ACC', acc[section]);
     return acc
   },{})
   return {
