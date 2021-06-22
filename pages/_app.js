@@ -1,5 +1,5 @@
 import '../styles/index.css'
-import 'typeface-krona-one'
+import '@fontsource/krona-one'
 import {DEFAULT_SEO} from '../lib/constants'
 import Head from 'next/head'
 

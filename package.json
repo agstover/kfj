@@ -1,5 +1,5 @@
 {
-  "name": "with-tailwindcss",
+  "name": "kfj_site",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -7,18 +7,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fontsource/krona-one": "^4.4.5",
     "next": "latest",
     "react": "^17.0.2",
     "react-country-flag": "^2.3.0",
     "react-dom": "^17.0.2",
     "react-photo-collage": "^1.0.9",
-    "styled-components": "^5.1.1",
-    "tailwindcss": "^2.2.2",
-    "typeface-krona-one": "0.0.71"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
     "postcss-flexbugs-fixes": "4.2.1",
-    "postcss-preset-env": "^6.7.0"
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.2.2"
   },
   "license": "MIT"
 }
